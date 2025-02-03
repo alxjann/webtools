@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <>
             <header>
-                <nav className="w-full h-20 drop-shadow-lg bg-custom-gray flex items-center justify-between px-10">
+                <nav className="w-full h-20 bg-custom-gray flex items-center justify-between px-10">
 
                     <div className="flex items-center space-x-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8 text-white">
@@ -30,7 +30,7 @@ export default function Navbar() {
                         &#9776;
                     </button>
 
-                    <ul className={`sm:hidden absolute top-20 left-0 w-full bg-custom-gray2 text-center text-white text-lg font-semibold overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[500px]' : 'max-h-0 shadow-none'}`}>   
+                    <ul className={`sm:hidden absolute top-20 left-0 w-full bg-custom-gray2 text-center text-white text-lg font-semibold overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[500px]' : 'max-h-0'}`}>   
                         {navItems.map((item) => (
                         <li key={item} className="cursor-pointer px-6 py-2">
                             {item}

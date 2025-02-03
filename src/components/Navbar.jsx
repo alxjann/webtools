@@ -30,7 +30,7 @@ export default function Navbar() {
                         &#9776;
                     </button>
 
-                    <ul className={`sm:hidden absolute top-20 left-0 w-full bg-custom-gray2 text-center text-white text-lg font-semibold overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[500px]' : 'max-h-0'}`}>   
+                    <ul className={`sm:hidden absolute top-20 left-0 w-full bg-custom-gray2 text-center text-white text-lg font-semibold overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[500px]' : 'max-h-0 shadow-none'}`}>   
                         {navItems.map((item) => (
                         <li key={item} className="cursor-pointer px-6 py-2">
                             {item}
